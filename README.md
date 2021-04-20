@@ -1,29 +1,5 @@
-# README #
+# DECLARACIONES BACKEND #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+En este repositorio se subirán las correcciones al sistema original que venía con muchos errores "de fabrica"
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# Modificaciones realizadas para el Gobierno del Estado de Veracruz por el Órgano de Fiscalización Superior de Veracruz http://www.orfis.gob.mx

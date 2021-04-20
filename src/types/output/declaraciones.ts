@@ -373,10 +373,16 @@ interface LocalizacionInversion {
   institucionRazonSocial?: string;
   rfc?: string;
 }
+// OMAR: se agrega interfaz subtipoInversion
+interface SubTipoIversion {
+  clave: string;
+  valor: string;
+  tipoInversion: string;
+}
 
 interface Inversion {
   tipoInversion?: Catalogo;
-  subTipoInversion?: Catalogo;
+  subTipoInversion?: SubTipoIversion; // OMAR: SE CAMBIA DE CATALOGO A SUBTIPOINVERSION
   titular?: Catalogo[];
   tercero?: Tercero[];
   numeroCuentaContrato?: string;

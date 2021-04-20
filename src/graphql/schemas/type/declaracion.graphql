@@ -369,9 +369,17 @@ type LocalizacionInversion {
   rfc: LimitedString
 }
 
+# OMAR: Se agrega el tipo SibtipoInversion para satisfacer el campo tipoInversion que se envia en el frontend
+type SubTipoInversion {
+  clave: LimitedString!
+  valor: LimitedString!
+  tipoInversion: LimitedString!
+}
+
 type Inversion {
   tipoInversion: Catalogo
-  subTipoInversion: Catalogo
+  #subTipoInversion: Catalogo
+  subTipoInversion: SubTipoInversion
   titular: [Catalogo]
   tercero: [Tercero]
   numeroCuentaContrato: LimitedString

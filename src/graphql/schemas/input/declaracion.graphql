@@ -369,9 +369,16 @@ input LocalizacionInversionInput {
   rfc: LimitedString
 }
 
+# OMAR: Se agrega el tipo SibtipoInversionInput para satisfacer el campo tipoInversion que se envia en el frontend
+input SubTipoInversionInput {
+  clave: LimitedString!
+  valor: LimitedString!
+  tipoInversion: LimitedString!
+}
+
 input InversionInput {
   tipoInversion: CatalogoInput
-  subTipoInversion: CatalogoInput
+  subTipoInversion: SubTipoInversionInput #se cambia de catalogoInput a subtipoInversionInput
   titular: [CatalogoInput]
   tercero: [TerceroInput]
   numeroCuentaContrato: LimitedString
