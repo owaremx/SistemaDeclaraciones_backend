@@ -15,7 +15,7 @@ export const BeneficioSchema = new Schema({
     enum: TipoPersona,
   },
   tipoBeneficio: CatalogoSchema,
-  beneficiario: [CatalogoSchema],
+  beneficiario: CatalogoSchema, //OMAR: Estaba como arreglo, se le quitó el arreglo
   otorgante: TerceroSchema,
   formaRecepcion: {
     type: String,
