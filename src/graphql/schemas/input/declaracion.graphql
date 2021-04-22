@@ -609,6 +609,7 @@ input FideicomisosInput {
 input DeclaracionesFilterInput {
   tipoDeclaracion: TipoDeclaracion
   declaracionCompleta: Boolean
+  firmada: Boolean
 }
 
 input DeclaracionSeccionesInput {
