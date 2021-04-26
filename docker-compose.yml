@@ -7,7 +7,7 @@ services:
       args:
         - NODE_ENV=${NODE_ENV}
     ports:
-      - 3011:3011
+      - 3023:3023
     restart: unless-stopped
 
   elasticsearch:
@@ -29,8 +29,8 @@ services:
     volumes:
       - esdata:/usr/share/elasticsearch/data
     ports:
-      - 9210:9210
-      - 9310:9310
+      - 9230:9230
+      - 9330:9330
 
   app:
     build:

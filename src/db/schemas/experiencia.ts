@@ -1,4 +1,4 @@
-import { AmbitoPublico, MexicoExtranjero, NivelOrdenGobierno } from '../../types/enums';
+import { MexicoExtranjero } from '../../types/enums';
 import { CatalogoSchema } from './catalogo';
 import { Schema } from 'mongoose';
 
@@ -11,14 +11,8 @@ const string_type = {
 
 export const ExperienciaSchema = new Schema({
   ambitoSector: CatalogoSchema,
-  nivelOrdenGobierno: {
-    type: String,
-    enum: NivelOrdenGobierno
-  },
-  ambitoPublico: {
-    type: String,
-    enum: AmbitoPublico,
-  },
+  nivelOrdenGobierno: string_type,  //OMAR: Se cambia a string_type porque con el enum no acepta nulos y se están enviando nulos
+  ambitoPublico:  string_type,
   nombreEntePublico: string_type,
   areaAdscripcion: string_type,
   empleoCargoComision: string_type,
