@@ -122,7 +122,7 @@ export class DeclaracionRepository {
       const responsePreview = await ReportsClient.getReport(declaracion);
       await SendgridClient.sendDeclarationFile(user.username, responsePreview.toString('base64'));
     } catch(e) {
-      throw new CreateError.InternalServerError('There was a problem sending the Report');
+      throw new CreateError.InternalServerError('Error al firmar: ' + e);
     }
 
     const missingFields = ['a', 'b', 'c'];
