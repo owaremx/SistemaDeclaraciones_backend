@@ -1,4 +1,4 @@
-import { FormaRecepcion, TipoOperacion, TipoPersona } from '../../types/enums';
+import { FormaRecepcion, TipoOperacion } from '../../types/enums';
 import { CatalogoSchema } from './catalogo';
 import { MontoSchema } from './monto';
 import { Schema } from 'mongoose';
@@ -12,7 +12,7 @@ export const BeneficioSchema = new Schema({
   },
   tipoPersona: {
     type: String,
-    enum: TipoPersona,
+    // enum: TipoPersona,
   },
   tipoBeneficio: CatalogoSchema,
   beneficiario: CatalogoSchema, //OMAR: Estaba como arreglo, se le quitó el arreglo
