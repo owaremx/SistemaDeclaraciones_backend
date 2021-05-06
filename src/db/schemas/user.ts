@@ -28,11 +28,13 @@ export const UserSchema = new Schema({
   },
 	curp: {
     type: String,
+    unique: true,
     required: true,
     uppercase: true,
   },
   rfc: {
     type: String,
+    unique: true,
     required: true,
     uppercase: true,
   },

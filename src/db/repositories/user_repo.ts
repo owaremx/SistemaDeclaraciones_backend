@@ -153,7 +153,7 @@ export class UserRepository {
 
       return createdUser;
     } catch(err) {
-      throw new CreateError.BadRequest(`User with username: ${user.username} already exist`);
+      throw new CreateError.BadRequest(err);
     }
   }
 

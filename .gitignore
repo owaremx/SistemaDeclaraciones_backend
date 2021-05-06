@@ -56,3 +56,4 @@ Thumbs.db
 build/
 .nyc_output/
 
+docker-compose.yml
